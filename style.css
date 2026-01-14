@@ -1,58 +1,50 @@
-body {
-  font-size: 16px;
-  margin: 0;
-}
+<body>
 
-/* モーダルを開くボタンのスタイル */
-#open {
-  cursor: pointer;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-align: center;
-  padding: 12px;
-  margin: 20px auto;
-}
+    <header>
+        <div class="header-title">
+            <h1>UPDATE LOG</h1>
+            <span class="sub-title">癒しをあなたに - 更新情報</span>
+        </div>
+    </header>
 
-/* 背景のマスク（黒い半透明の膜） */
-#mask {
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1; /* モーダルより下に配置 */
-}
+    <main class="container">
+        <h2>最新の更新</h2>
 
-/* モーダル本体 */
-#modal {
-  background: #fff;
-  width: 300px;
-  padding: 20px;
-  border-radius: 4px;
-  position: fixed;
-  top: 40px; /* 上からの位置 */
-  left: 0;
-  right: 0;
-  margin: 0 auto; /* 左右中央揃え */
-  z-index: 2; /* マスクより上に配置 */
-}
+        <article class="update-card">
+            <div class="update-header">
+               <!--
+              <div>
+                    <span class="update-version">v1.2.0</span>
+                    <span class="update-title">新機能「おやすみモード」追加</span>
+                </div>
+                <time class="update-date">2025.12.18</time>
+            </div>
+            <div class="update-content">
+                <p>ユーザーの皆様からのご要望にお応えし、より深い癒やし体験を提供する新機能を追加しました。</p>
+                <ul>
+                    <li>背景音が自動でフェードアウトする機能を追加</li>
+                    <li>画面の明るさを自動調整するオプションを追加</li>
+                    <li>一部のUI表示バグを修正</li>
+                </ul>
+            </div>
+        </article>
+        <article class="update-card">-->
+            <div class="update-header">
+                <div>
+                    <span class="update-version">v1.1.0</span>
+                    <span class="update-title">癒しをあなたにリリース</span>
+                </div>
+                <time class="update-date">2025.12.19</time>
+            </div>
+          
+        </article>
 
-#modal p {
-  margin: 0 0 20px;
-}
+    </main>
 
-/* 閉じるボタン */
-#close {
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-align: center;
-  padding: 8px;
-}
+    <footer>
+        <p>&copy; 2025 癒しをあなたに All Rights Reserved.</p>
+        <p><a href="#">アプリに戻る</a></p>
+    </footer>
 
-/* 「hidden」クラスがついている時は表示しない */
-.hidden {
-  display: none;
-}
+</body>
+
